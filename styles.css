@@ -1,0 +1,72 @@
+:root {
+  --grad-fondo: linear-gradient(160deg, #1e1b4b, #312e81 45%, #0f172a);
+  --grad-boton: linear-gradient(135deg, #6366f1, #a855f7);
+  --grad-caja: linear-gradient(135deg, #06b6d4, #3b82f6);
+  --texto: #e8e8f5;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  background: var(--grad-fondo);
+  color: var(--texto);
+}
+
+h1 {
+  background: linear-gradient(90deg, #67e8f9, #c084fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+#boxElement {
+  width: 200px;
+  height: 100px;
+  margin: 1rem 0;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border-radius: .75rem;
+  background: var(--grad-caja);
+  color: #06273a;
+  font-weight: 600;
+  transition: transform .2s;
+}
+
+#boxElement:hover {
+  transform: scale(1.04);
+}
+
+button {
+  font: inherit;
+  padding: .5rem 1rem;
+  border: 0;
+  border-radius: .5rem;
+  color: #fff;
+  background: var(--grad-boton);
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.15);
+}
+
+input {
+  font: inherit;
+  padding: .5rem .8rem;
+  border: 1px solid #6366f1;
+  border-radius: .5rem;
+  background: rgba(255, 255, 255, .08);
+  color: var(--texto);
+}
+
+input::placeholder {
+  color: #a5a5c5;
+}
+
+#greetingHeading {
+  min-height: 1.5em;
+}
